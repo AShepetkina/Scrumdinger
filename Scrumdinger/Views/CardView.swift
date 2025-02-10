@@ -1,9 +1,3 @@
-//
-//  CardView.swift
-//  Scrumdinger
-//
-//  Created by Anastasia Schepetkina on 20.01.2025.
-//
 import SwiftUI
 
 
@@ -29,7 +23,6 @@ struct CardView: View {
         .foregroundColor(scrum.theme.accentColor)
     }
 }
-
 
 struct CardView_Previews: PreviewProvider {
     static var scrum = DailyScrum.sampleData[0]

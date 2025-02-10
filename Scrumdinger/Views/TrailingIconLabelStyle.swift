@@ -1,9 +1,3 @@
-//
-//  TrailingIconLabelStyle.swift
-//  Scrumdinger
-//
-//  Created by Anastasia Schepetkina on 20.01.2025.
-//
 import SwiftUI
 
 struct TrailingIconLabelStyle: LabelStyle {
@@ -13,8 +7,6 @@ struct TrailingIconLabelStyle: LabelStyle {
             configuration.icon
         }
     }
-
-
 }
 
 extension LabelStyle where Self == TrailingIconLabelStyle {
