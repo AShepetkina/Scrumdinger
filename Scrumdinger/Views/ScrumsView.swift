@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ScrumsView: View {
-    @State private var interestingNumber: Int = 0
+   
     @Binding var scrums: [DailyScrum]
     @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewScrumView = false
@@ -27,13 +27,6 @@ struct ScrumsView: View {
                 }
 
                 Spacer()
-                
-                HStack {
-                    Text("What a number: \(interestingNumber)!")
-                    Button("PUSH ME!!1") {
-                        interestingNumber = Int.random(in: 1...10)
-                    }
-                }
             }
         }
         .sheet(isPresented: $isPresentingNewScrumView) {
