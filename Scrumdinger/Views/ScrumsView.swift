@@ -1,11 +1,13 @@
 import SwiftUI
 
 struct ScrumsView: View {
+
     @State private var currentTime: String = ""
     @Binding var scrums: [DailyScrum]
     @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewScrumView = false
     let saveAction: () -> Void
+
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
