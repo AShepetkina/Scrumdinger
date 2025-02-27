@@ -30,11 +30,11 @@ struct ScrumsView: View {
                 Spacer()
 
                 Text(currentTime)
-                    .font(.footnote)
-                    .padding()
+                    .font(.caption)
+                    .foregroundColor(.accentColor)
                     .onReceive(timer) { _ in
                         let formatter = DateFormatter()
-                        formatter.dateFormat = "HH:mm:ss, dd MMM yyyy"
+                        formatter.dateFormat = "HH:mm, dd MMM yyyy"
                         currentTime = formatter.string(from: Date())
                     }
             }
